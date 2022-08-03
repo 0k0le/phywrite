@@ -1,14 +1,14 @@
 #
-# phyread makefile
+# phywrite makefile
 
-phyread: phyread.o
-	gcc phyread.o -o phyread
+phywrite: phywrite.o
+	gcc phywrite.o -o phywrite
 
-phyread.o: phyread.c
-	gcc phyread.c -Wall -Wextra -pedantic -O2 -c -o phyread.o
+phywrite.o: phywrite.c
+	gcc phywrite.c -Wall -Wextra -pedantic -O2 -c -o phywrite.o
 
 install:
-	mv phyread /usr/bin/phyread
+	cp phywrite /usr/bin/phywrite
 
 clean:
-	rm -f phyread.o phyread
+	rm -f phywrite.o phywrite
