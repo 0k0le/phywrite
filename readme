@@ -1,0 +1,12 @@
+----
+
+phyread is simple...
+
+I wrote it to help inspect memory on beaglebone(AM335) :)
+
+Example of reading PRU1 control register:
+	./phyread 0x4A322000
+
+Have fun!
+
+
